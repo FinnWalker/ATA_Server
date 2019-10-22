@@ -1,0 +1,18 @@
+{
+  "name": "ata_server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "ata_server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "mongo-sanitize": "^1.0.1",
+    "mongoose": "^5.7.6",
+    "uuid": "^3.3.3"
+  }
+}
