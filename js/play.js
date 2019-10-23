@@ -2,6 +2,7 @@ const sanitize = require("mongo-sanitize");
 const Participant = require("./participant.js");
 
 function play(req, res) {
+  console.log(req.body);
   const video = sanitize(req.body.video);
   const id = sanitize(req.body.id);
 

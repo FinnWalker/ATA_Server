@@ -8,12 +8,26 @@ function waiver(req, res) {
     const age = sanitize(req.body.age);
     const email = sanitize(req.body.email);
     const gender = sanitize(req.body.gender);
+    const regional = sanitize(req.body.regional);
+    const urban = sanitize(req.body.urban);
+    const learner = sanitize(req.body.learner);
+    const p1 = sanitize(req.body.p1);
+    const p2 = sanitize(req.body.p2);
+    const full_license = sanitize(req.body.full_license);
+    const not_driving = sanitize(req.body.not_driving);
 
     if (
         name !== undefined &&
         age !== undefined &&
         email !== undefined &&
-        gender !== undefined
+        gender !== undefined && 
+        regional !== undefined &&
+        urban !== undefined &&
+        learner !== undefined &&
+        p1 !== undefined &&
+        p2 !== undefined &&
+        full_license !== undefined &&
+        not_driving !== undefined
     ) {
         const newParticipant = new Participant({
             id: uuid.v4(),
@@ -27,7 +41,14 @@ function waiver(req, res) {
             video_2: false,
             video_3: false,
             video_4: false,
-            vr: false
+            vr: false,
+            regional,
+            urban,
+            learner,
+            p1,
+            p2,
+            full_license,
+            not_driving
         });
         newParticipant.save().then(() => {
             res

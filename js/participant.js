@@ -12,7 +12,17 @@ const Participant = mongoose.model("Participant", {
   video_2: Boolean,
   video_3: Boolean,
   video_4: Boolean,
-  vr: Boolean
+  vr: Boolean,
+  regional: Boolean,
+  urban: Boolean,
+  learner: Boolean,
+  p1: Boolean,
+  p2: Boolean,
+  full_license: Boolean,
+  not_driving: Boolean,
+  blindspots: Number,
+  stopping_distance: Number,
+  texting_risk: Number
 });
 
 module.exports = Participant;
