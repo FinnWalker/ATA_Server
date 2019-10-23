@@ -25,6 +25,7 @@ function exit(req, res) {
           });
         } else {
           res.status(300).json({ message: "The participant was not found" });
+
         }
       }
     });

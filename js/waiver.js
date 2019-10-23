@@ -42,13 +42,13 @@ function waiver(req, res) {
             video_3: false,
             video_4: false,
             vr: false,
-            regional,
-            urban,
-            learner,
-            p1,
-            p2,
-            full_license,
-            not_driving
+            regional: (regional==="1")?true:false,
+            urban: (urban==="1")?true:false,
+            learner: (learner==="1")?true:false,
+            p1: (p1==="1")?true:false,
+            p2: (p2==="1")?true:false,
+            full_license: (full_license==="1")?true:false,
+            not_driving: (not_driving==="1")?true:false,
         });
         newParticipant.save().then(() => {
             res
