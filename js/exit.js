@@ -49,13 +49,13 @@ async function email(score, email, name) {
     port: 587,
     secure: false, // true for 465, false for other ports
     auth: {
-      user: "atasafet360@gmail.com", // generated ethereal user
+      user: "safet360vr@gmail.com", // generated ethereal user
       pass: "wvt8yDwefDPiFNCAFN" // generated ethereal password
     }
   });
 
   let message = {
-    from: "atasafet360@gmail.com",
+    from: "safet360vr@gmail.com",
 
     // Comma separated list of recipients
     to: email,
