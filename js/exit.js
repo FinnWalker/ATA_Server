@@ -50,7 +50,7 @@ async function email(score, email, name) {
     secure: false, // true for 465, false for other ports
     auth: {
       user: "safet360vr@gmail.com", // generated ethereal user
-      pass: "wvt8yDwefDPiFNCAFN" // generated ethereal password
+      pass: "ATA360TrucksVR19" // generated ethereal password
     }
   });
 
