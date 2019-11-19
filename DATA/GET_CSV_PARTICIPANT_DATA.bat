@@ -1,0 +1,1 @@
+node ../ata_participants.js
