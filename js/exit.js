@@ -46,6 +46,7 @@ function exit(req, res) {
 
 
 async function email(score, email, name) {
+  if(score === undefined) score = 0;
   let transporter = nodemailer.createTransport({
     //host: "smtp.gmail.com",
     host: "smtp-mail.outlook.com",
