@@ -86,6 +86,4 @@ async function email(score, email, name) {
   ////
 }
 
-email(3, "finn3walker@gmail.com", "Finn");
-
 module.exports = exit;
